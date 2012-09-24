@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <!-- js -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="/static/js/main.js"></script>
+  <script type="text/javascript">
+  <!--
+  $('body').ready( initialize("<: $addr_normalized :>") );
+  -->
+  </script>
+
+  <link rel="stylesheet" href="/static/css/bootstrap.css" />
+  <link rel="stylesheet" href="/static/css/base.css" />
+  <link rel="shortcut icon" href="/static/favicon.ico" />
+</head>
+<body>
+
+<!-- navigation bar -->
+<div class="navbar navbar-static-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/?q=<: $addr_normalized :>"><: $title :></a>
+
+      <form class="navbar-search pull-left" action="" _lpchecked="1">
+        <input name="q" type="text" class="search-query span2" placeholder="Search">
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- contents -->
+<div class="container">
+
+  <!-- map -->
+  <div id="map_canvas"></div>
+  <ul class="breadcrumb">
+    <li><a href="#"><: $addr_normalized :></a></li>
+  </ul>
+
+  <div id="infoarea">
+    <h1><: $addr_normalized :></h1>
+    <ul class="nav nav-tabs" style="margin-top:10px">
+      <li class="active"><a href="#">info</a> </li>
+      <li><a href="#">jump</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- footer -->
+<footer class="footer" >
+  <div class="container">
+    <address class="generated-by">Powerd by Nephia</address>
+  </div>
+</footer>
+
+</body>
+</html>

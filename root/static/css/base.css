@@ -1,0 +1,22 @@
+html { height: 100% }
+body { height: 100%; margin: 0px; padding: 0px }
+.container {
+ max-width : 940px;
+ width : 100%;
+}
+#map_canvas {
+ max-width : 940px;
+ min-width : 240px;
+ width : 100%;
+ z-index : 0;
+ height : 240px;
+}
+
+#infoarea {
+ margin : 0px 5px 5px 5px;
+}
+
+.footer {
+
+}
+
