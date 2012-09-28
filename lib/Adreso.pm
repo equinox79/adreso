@@ -8,7 +8,17 @@ our $VERSION = 0.01;
 
 path '/' => sub {
     my $req = shift;
-    my $params = validate q => { isa => 'Str'};
+    my $params = undef;
+
+    eval {
+        $params = validate q => { isa => 'Str'};
+    };
+    if($@){
+        return {
+            title    => 'adre.so',
+            template => 'description.tx',
+	};
+    }
 
     return &Adreso::Pages::index( $req, $params );
 };

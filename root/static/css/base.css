@@ -3,6 +3,7 @@ body { height: 100%; margin: 0px; padding: 0px }
 .container {
  max-width : 940px;
  width : 100%;
+ obverflow : hidden;
 }
 #map_canvas {
  max-width : 940px;
@@ -15,8 +16,31 @@ body { height: 100%; margin: 0px; padding: 0px }
 #infoarea {
  margin : 0px 5px 5px 5px;
 }
+#infoarea ul{
+ list-style-type : none;
+
+}
+
+.breadcrumb input {
+  margin-bottom : 0px;
+  margin-left : 5px;
+}
+
+.breadcrumb div {
+  isplay: inline-block;
+  _display: inline;
+}
 
 .footer {
+ height:100%;
+}
 
+.footer .container {
+ background-color : whiteSmoke;
+ margin-top:20px;
+ padding-top : 5px;
+ padding-bottom : 5px;
+ padding-left : 3px;
+ text-align : center;
 }
 
