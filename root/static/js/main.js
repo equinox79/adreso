@@ -43,7 +43,8 @@ function initialize(addrString) {
 	    URL.touch.replace('__lat__', ll.Xa).replace('__lng__', ll.Ya));
 
       } else {
-        alert("geocoder error:" + status);
+        //alert("geocoder error:" + status);
+        location.href = "/error";
       }
     }
   );
