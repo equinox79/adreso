@@ -1,24 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/vnd.microsoft.icon">
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-  <!-- js -->
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-  <script type="text/javascript" src="http://geohex.net/hex_v3_core.js"></script>
-  <script type="text/javascript" src="http://geohex.net/hex_v2_gmap3.js"></script>
-  <script type="text/javascript" src="/static/js/main.js"></script>
+  :include "header.tx";
   <script type="text/javascript">
   <!--
   $('body').ready( initialize("<: $addr_normalized :>") );
   -->
   </script>
-
-  <link rel="stylesheet" href="/static/css/bootstrap.css" />
-  <link rel="stylesheet" href="/static/css/base.css" />
-  <link rel="shortcut icon" href="/static/favicon.ico" />
 </head>
 <body>
 
@@ -71,17 +59,7 @@
 </div>
 
 <!-- footer -->
-<footer class="footer" >
-  <div class="container">
-    Powerd by <a href="https://github.com/ytnobody/Nephia">Nephia</a>, <a href="http://tou.ch/"><image src="/static/img/loctouch_logo_color.png" style="height:22px"/></a>
-
-    <div style="background-color:#ffffff;padding:5px;border:solid 1px lightgray;margin:10px auto 10px auto;width:240px;">
-      <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.1/jp/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.1/jp/88x31.png"></a><br><span xmlns:dc="http://purl.org/dc/elements/1.1/" property="dc:title">GeoHex</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://geogames.net" property="cc:attributionName" rel="cc:attributionURL">sa2da</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.1/jp/">Creative Commons 表示-継承 2.1 日本 License</a>.
-    </div>
-   
-  </div>
-
-</footer>
+:include "footer.tx";
 
 </body>
 </html>

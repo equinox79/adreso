@@ -1,16 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/vnd.microsoft.icon">
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-  <!-- js -->
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-
-  <link rel="stylesheet" href="/static/css/bootstrap.css" />
-  <link rel="stylesheet" href="/static/css/base.css" />
-  <link rel="shortcut icon" href="/static/favicon.ico" />
+  :include "header.tx";
 </head>
 <body>
 
@@ -38,11 +29,7 @@
 </div>
 
 <!-- footer -->
-<footer class="footer" >
-  <div class="container">
-    Powerd by <a href="https://github.com/ytnobody/Nephia">Nephia</a>, <a href="http://tou.ch/"><image src="/static/img/loctouch_logo_color.png" style="height:22px"/></a>
-  </div>
-</footer>
+:include "footer.tx";
 
 </body>
 </html>

@@ -1,0 +1,11 @@
+<footer class="footer" >
+  <div class="container">
+    Powerd by <a href="https://github.com/ytnobody/Nephia">Nephia</a>, <a href="http://tou.ch/"><image src="/static/img/loctouch_logo_color.png" style="height:22px"/></a>
+
+    <div style="background-color:#ffffff;padding:5px;border:solid 1px lightgray;margin:10px auto 10px auto;width:240px;">
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.1/jp/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/2.1/jp/88x31.png"></a><br><span xmlns:dc="http://purl.org/dc/elements/1.1/" property="dc:title">GeoHex</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://geogames.net" property="cc:attributionName" rel="cc:attributionURL">sa2da</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.1/jp/">Creative Commons 表示-継承 2.1 日本 License</a>.
+    </div>
+   
+  </div>
+
+</footer>
