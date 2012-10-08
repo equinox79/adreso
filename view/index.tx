@@ -46,12 +46,17 @@
     <ul>
       <li>
         <a id="google_link" href="http://maps.google.co.jp/?q=<: $addr_normalized :>">
-        <span><image src="https://maps.gstatic.com/favicon2.ico" /> google mapsで見る</span>
+        <span><image class="favicon" src="https://maps.gstatic.com/favicon2.ico" /> google mapsで見る</span>
+        </a>
+      </li>
+      <li>
+        <a id="apple_link" href="http://maps.apple.com/maps?q=<: $addr_normalized :>">
+        <span><image class="favicon" src="https://developer.apple.com/favicon.ico" /> map.appで見る(iOS only)</span>
         </a>
       </li>
       <li>
         <a id="touch_link" href="http://tou.ch/map/">
-        <span><image src="http://tou.ch/images/favicon.ico" />ロケタッチマップで見る</span>
+        <span><image class="favicon" src="http://tou.ch/images/favicon.ico" />ロケタッチマップで見る</span>
         </a>
       </li>
   </div>

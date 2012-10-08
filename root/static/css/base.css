@@ -21,6 +21,11 @@ body { height: 100%; margin: 0px; padding: 0px }
 
 }
 
+.favicon {
+  width  : 16px;
+  height : 16px;
+}
+
 .breadcrumb input {
   margin-bottom : 0px;
   margin-left : 5px;
