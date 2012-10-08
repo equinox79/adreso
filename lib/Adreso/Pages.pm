@@ -18,13 +18,10 @@ sub index {
 
     my $query = &query_parse($params->{q});
 
-    # キャッシュをチェック
-    #return $page if ( $hoge = &search_cache( $query->{query_string} ) );
-
     # 住所の時は正規化APIを叩く
     if ( $query->{type} eq 'addr' ) {
-        $page->{addr_normalized} = &addr_normalize( $query->{parts}[0] );
-        #$page->{addr_normalized} = $params->{q};
+        #$page->{addr_normalized} = &addr_normalize( $query->{parts}[0] );
+        $page->{addr_normalized} = $query->{parts}[0];
     }
     elsif ( $query->{type} eq 'latlon' ) {
 
@@ -32,7 +29,6 @@ sub index {
     else {
 
     }
-    #&save_cache($addr_raw, $addr_normalize);
 
     return $page;
 }

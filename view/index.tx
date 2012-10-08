@@ -42,7 +42,7 @@
   </ul>
 
   <div id="infoarea">
-    <h1><: $addr_normalized :></h1>
+    <h1 id="addr"><: $addr_normalized :></h1>
     <ul>
       <li>
         <a id="google_link" href="http://maps.google.co.jp/?q=<: $addr_normalized :>">

@@ -1,18 +1,46 @@
 var latlonlist = undefined;
-var map = undefined;
+var map        = undefined;
+var geocoder   = undefined;
 
 var URL = {
     googlemaps : 'https://maps.google.com/?q=',
     adreso_hex : 'http://adre.so/h/',
-    touch      : 'http://tou.ch/map/#!/target=all&lat=__lat__&lng=__lng__'
+    touch      : 'http://tou.ch/map/#!/target=all&lat=__lat__&lng=__lng__',
+    address_normalize : 'https://api.loctouch.com/v1/geo/address_normalize',
 };
 
 function initialize(addrString) {
+  // ジオコーダオブジェクト生成
+  geocoder = new google.maps.Geocoder();
+  // 住所文字列の正規化-->ジオコーディングとページ生成へ
+  addr_normalize({
+    address  : addrString,
+    callback : geocoding_and_rendering
+  });
+}
 
-  // 住所文字列から緯度経度
-  var geocoder = new google.maps.Geocoder();
+function addr_normalize(params) {
+  $.ajax({
+    type : 'GET',
+    url  : URL.address_normalize,
+    data : {
+      address  : params.address,
+    },
+    dataType : 'jsonp',
+    success  : params.callback,
+    error    : function(result){
+      alert(result);
+    }
+  });
+}
+
+function geocoding_and_rendering(result_json) {
+
+  var addr_str = result_json.result.address;
+  $('#addr').text(addr_str);
+
   geocoder.geocode(
-    { address: addrString },
+    { address: addr_str },
     function(results, status) {
       if (status == google.maps.GeocoderStatus.OK) {
         latlonlist = results;
@@ -48,5 +76,4 @@ function initialize(addrString) {
       }
     }
   );
-}
-
+};
