@@ -4,7 +4,6 @@ use warnings;
 use Data::Printer;
 use Data::Dumper;
 use Encode;
-use WebService::Simple;
 use URI::Escape;
 use JSON;
 use utf8;
