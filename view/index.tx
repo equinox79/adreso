@@ -4,7 +4,7 @@
   :include "header.tx";
   <script type="text/javascript">
   <!--
-  $('body').ready( initialize("<: $addr_normalized :>") );
+  $('body').ready( initialize("<: $addr :>") );
   -->
   </script>
 </head>
@@ -42,15 +42,15 @@
   </ul>
 
   <div id="infoarea">
-    <h1 id="addr"><: $addr_normalized :></h1>
+    <h1 id="addr"><: $addr :></h1>
     <ul>
       <li>
-        <a id="google_link" href="http://maps.google.co.jp/?q=<: $addr_normalized :>">
+        <a id="google_link" href="http://maps.google.co.jp/?q=<: $addr :>">
         <span><image class="favicon" src="https://maps.gstatic.com/favicon2.ico" /> google mapsで見る</span>
         </a>
       </li>
       <li>
-        <a id="apple_link" href="http://maps.apple.com/maps?q=<: $addr_normalized :>">
+        <a id="apple_link" href="http://maps.apple.com/maps?q=<: $addr :>">
         <span><image class="favicon" src="https://developer.apple.com/favicon.ico" /> map.appで見る(iOS only)</span>
         </a>
       </li>
