@@ -7,6 +7,8 @@ use Encode;
 use URI::Escape;
 use JSON;
 use utf8;
+use Plack::Response;
+use Encode;
 
 sub index {
     my ( $req, $params ) = @_;
@@ -16,10 +18,15 @@ sub index {
     };
 
     my $query = &query_parse($params->{q});
-
-    # 住所の時は正規化APIを叩く
+    
     if ( $query->{type} eq 'addr' ) {
         $page->{addr} = $query->{parts}[0];
+	$page->{cmd}  = $params->{cmd};
+
+	if( $page->{cmd} =~ /google/ ){
+            $page = Plack::Response->new();
+	    $page->redirect( 'http://maps.google.co.jp/?q=' . Encode::encode('UTF-8', $query->{parts}[0]), 301 );
+	}
     }
     elsif ( $query->{type} eq 'latlon' ) {
         $page->{addr} = $query->{query_string};

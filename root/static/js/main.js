@@ -59,16 +59,16 @@ function geocoding_and_rendering(result_json) {
         });
 
         // hex
-        var zone = GeoHex.getZoneByLocation( ll.Xa, ll.Ya, 11 );
+        var zone = GeoHex.getZoneByLocation( ll.$a, ll.ab, 11 );
         zone.drawHex(map, {linecolor:"#FF0000",fillcolor:"#FF8a00",popinfo:1});
         $('#short_link').val(URL.adreso_hex + zone.code)
 
         // google mapへのリンクを張り替え
-	$('#google_link').attr('href', URL.googlemaps + ll.Xa + ',' + ll.Ya);
+	$('#google_link').attr('href', URL.googlemaps + ll.$a + ',' + ll.ab);
 
         // touchmapへのリンクを張り替え
 	$('#touch_link').attr('href',
-	    URL.touch.replace('__lat__', ll.Xa).replace('__lng__', ll.Ya));
+	    URL.touch.replace('__lat__', ll.$a).replace('__lng__', ll.ab));
 
       } else {
         //alert("geocoder error:" + status);
