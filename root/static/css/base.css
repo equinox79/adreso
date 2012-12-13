@@ -20,7 +20,7 @@ body { height: 100%; margin: 0px; padding: 0px }
  list-style-type : none;
 }
 #infoarea .ios{
- display : none;
+ display : block;
 }
 
 .favicon {

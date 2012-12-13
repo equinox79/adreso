@@ -22,8 +22,8 @@ function initialize(addrString) {
   // UA判定
   navigator.userAgentObject = woothee.parse(navigator.userAgent);
 
-  if( navigator.userAgentObject.os.match(/iOS/) ){
-    $('.ios').css('display', 'block');
+  if( navigator.userAgentObject.os.match(/(iPhone|iOS|iPad|iPod|OSX)/).length > 0 ){
+    //$('#infoarea .ios').css('display', 'block');
   }
 }
 
