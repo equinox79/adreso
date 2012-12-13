@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>adre.so - Address is Should Be Clickable</title>
+  <title>adre.so - Address is Should be Clickable</title>
   :include "header.tx";
 </head>
 <body>
@@ -18,13 +18,17 @@
 <!-- contents -->
 <div class="container">
   <h1>Welcome to adre.so</h1>
+  <p>Address is Should be Clickable.<p>
 
   <h2>SYNOPSIS</h2>
   <div id="infoarea">
     <ul>
+      <li><a href="/Statue+of+Liberty">http://adre.so/Statue+of+Liberty</a></li>
       <li><a href="/東京都千代田区岩本町1-1">http://adre.so/東京都千代田区岩本町1-1</a></li>
       <li><a href="/新宿駅">http://adre.so/新宿駅</a></li>
       <li><a href="/日本のへそ">http://adre.so/日本のへそ</a></li>
+      <li><a href="/富士山:google">http://adre.so/富士山:google</a></li>
+      <li><a href="/鹿児島県志布志市志布志町志布志:googleapp">http://adre.so/鹿児島県志布志市志布志町志布志:googleapp</a></li>
   </div>
 
 </div>
