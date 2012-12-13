@@ -21,6 +21,10 @@ function initialize(addrString) {
   });
   // UA判定
   navigator.userAgentObject = woothee.parse(navigator.userAgent);
+
+  if( navigator.userAgentObject.os.match(/iOS/) ){
+    $('.ios').css('display', 'block');
+  }
 }
 
 function addr_normalize(params) {
