@@ -47,34 +47,34 @@
   <div id="infoarea">
     <h1 id="addr"><: $addr :></h1>
     <ul class="nav nav-tabs nav-stacked">
-      <li>
+      <li class="ios">
         <a id="google_maps_app" href="comgooglemaps://?q=<: $addr :>">
         <span><image class="favicon" src="https://maps.gstatic.com/favicon2.ico" /> Google  Mapsアプリ起動(iOS)</span>
         </a>
       </li>
-      <li>
+      <li class="web">
         <a id="google_link" href="http://maps.google.co.jp/?q=<: $addr :>">
         <span><image class="favicon" src="https://maps.gstatic.com/favicon2.ico" /> Google Maps Web(PC/Android/iOS)</span>
         </a>
       </li>
-      <li>
+      <li class="ios">
         <a id="apple_link" href="http://maps.apple.com/maps?q=<: $addr :>">
         <span><image class="favicon" src="https://developer.apple.com/favicon.ico" /> iOSマップアプリ起動(iOS)</span>
         </a>
       </li>
-      <li>
+      <li class="web">
         <a id="yjmap_web_link" href="http://map.yahoo.co.jp/">
         <span><image class="favicon" src="http://map.yahoo.co.jp/favicon.ico" />Y!ロコ地図で見る</span>
         </a>
       </li>
       <!--
-      <li>
+      <li class="web">
         <a id="mapion_web_link" href="http://www.mapion.co.jp/">
         <span><image class="favicon" src="http://www.mapion.co.jp/favicon.ico" />マピオンで見る</span>
         </a>
       </li>
       -->
-      <li>
+      <li class="web">
         <a id="touch_link" href="http://tou.ch/map/">
         <span><image class="favicon" src="http://tou.ch/images/favicon.ico" />ロケタッチマップで見る</span>
         </a>

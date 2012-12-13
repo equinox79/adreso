@@ -19,6 +19,8 @@ function initialize(addrString) {
     address  : addrString,
     callback : geocoding_and_rendering
   });
+  // UA判定
+  navigator.userAgentObject = woothee.parse(navigator.userAgent);
 }
 
 function addr_normalize(params) {

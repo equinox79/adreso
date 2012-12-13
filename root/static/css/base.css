@@ -18,7 +18,9 @@ body { height: 100%; margin: 0px; padding: 0px }
 }
 #infoarea ul{
  list-style-type : none;
-
+}
+#infoarea .ios{
+ display : block;
 }
 
 .favicon {
