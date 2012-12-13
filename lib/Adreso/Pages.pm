@@ -23,9 +23,13 @@ sub index {
         $page->{addr} = $query->{parts}[0];
 	$page->{cmd}  = $params->{cmd};
 
-	if( $page->{cmd} =~ /google/ ){
+	if( $page->{cmd} =~ /^google$/ ){
             $page = Plack::Response->new();
 	    $page->redirect( 'http://maps.google.co.jp/?q=' . Encode::encode('UTF-8', $query->{parts}[0]), 301 );
+	}
+	if( $page->{cmd} =~ /^googleapp$/ ){
+            $page = Plack::Response->new();
+	    $page->redirect( 'comgooglemaps://?q=' . Encode::encode('UTF-8', $query->{parts}[0]), 301 );
 	}
     }
     elsif ( $query->{type} eq 'latlon' ) {

@@ -6,6 +6,8 @@ var URL = {
     googlemaps : 'https://maps.google.com/?q=',
     adreso_hex : 'http://adre.so/h/',
     touch      : 'http://tou.ch/map/#!/target=all&lat=__lat__&lng=__lng__',
+    yjmap_web  : 'http://map.yahoo.co.jp/maps?z=15&lat=__lat__&lon=__lng__',
+    mapion_web : 'http://www.mapion.co.jp/m/%%lat%%_%%lng%%_8/',
     address_normalize : 'https://api.loctouch.com/v1/geo/address_normalize',
 };
 
@@ -59,16 +61,21 @@ function geocoding_and_rendering(result_json) {
         });
 
         // hex
-        var zone = GeoHex.getZoneByLocation( ll.$a, ll.ab, 11 );
+        var zone = GeoHex.getZoneByLocation( ll.lat(), ll.lng(), 11 );
         zone.drawHex(map, {linecolor:"#FF0000",fillcolor:"#FF8a00",popinfo:1});
-        $('#short_link').val(URL.adreso_hex + zone.code)
-
-        // google mapへのリンクを張り替え
-	$('#google_link').attr('href', URL.googlemaps + ll.$a + ',' + ll.ab);
+        //$('#short_link').val(URL.adreso_hex + zone.code)
 
         // touchmapへのリンクを張り替え
 	$('#touch_link').attr('href',
-	    URL.touch.replace('__lat__', ll.$a).replace('__lng__', ll.ab));
+	    URL.touch.replace('__lat__', ll.lat()).replace('__lng__', ll.lng()));
+
+        // Y!ロコへのリンクを張り替え
+	$('#yjmap_web_link').attr('href',
+	    URL.yjmap_web.replace('__lat__', ll.lat()).replace('__lng__', ll.lng()));
+
+        // mapionへのリンクを張り替え
+	//$('#mapion_web_link').attr('href',
+	//    URL.mapion_web.replace('%%lat%%', ll.lat()).replace('%%lng%%', ll.lng()));
 
       } else {
         //alert("geocoder error:" + status);

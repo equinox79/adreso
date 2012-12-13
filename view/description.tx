@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>adre.so - Address is Should Be Clickable</title>
   :include "header.tx";
 </head>
 <body>
