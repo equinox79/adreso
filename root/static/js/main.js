@@ -23,7 +23,7 @@ function initialize(addrString) {
   navigator.userAgentObject = woothee.parse(navigator.userAgent);
 
   if( navigator.userAgentObject.os.match(/(iPhone|iOS|iPad|iPod|OSX)/).length > 0 ){
-    //$('#infoarea .ios').css('display', 'block');
+    $('#infoarea .ios').css('display', 'block');
   }
 }
 

@@ -5,6 +5,9 @@ body { height: 100%; margin: 0px; padding: 0px;  overflow: hidden; width:100%;}
  width : 100%;
  overflow : hidden;
 }
+.container p{
+ margin-left : 7px;
+}
 #map_canvas {
  max-width : 940px;
  min-width : 240px;
@@ -20,7 +23,7 @@ body { height: 100%; margin: 0px; padding: 0px;  overflow: hidden; width:100%;}
  list-style-type : none;
 }
 #infoarea .ios{
- display : block;
+ display : none;
 }
 
 .favicon {
