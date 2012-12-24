@@ -1,9 +1,9 @@
 html { height: 100% }
-body { height: 100%; margin: 0px; padding: 0px }
+body { height: 100%; margin: 0px; padding: 0px;  overflow: hidden; width:100%;}
 .container {
  max-width : 940px;
  width : 100%;
- obverflow : hidden;
+ overflow : hidden;
 }
 #map_canvas {
  max-width : 940px;

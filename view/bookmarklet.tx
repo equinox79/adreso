@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>open in adre.so</title>
+  :include "header.tx";
+</head>
+<body>
+
+<!-- navigation bar -->
+<div class="navbar navbar-static-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/"><: $title :></a>
+    </div>
+  </div>
+</div>
+
+<!-- contents -->
+<div class="container">
+  <h1>Bookmarklet</h1>
+  <h3>Add link to adre.so on address-like texts(ページ内の住所文字列をリンクにする)</h3>
+  <p>1. このページを一旦ブックマーク</p>
+  <p>2. ブックマークを編集して http://adre.so/#! の部分を削除する</p>
+</div>
+
+<!-- footer -->
+:include "footer.tx";
+
+</body>
+</html>

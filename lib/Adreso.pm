@@ -21,6 +21,10 @@ path '/' => sub {
     return &Adreso::Pages::index( $req, $params );
 };
 
+path '/bookmarklet' => sub {
+    return { title => 'adre.so', template => 'bookmarklet.tx' };
+};
+
 1;
 __END__
 

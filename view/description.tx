@@ -22,13 +22,29 @@
 
   <h2>SYNOPSIS</h2>
   <div id="infoarea">
-    <ul>
+    <ul class="nav nav-tabs nav-stacked">
       <li><a href="/Statue+of+Liberty">http://adre.so/Statue+of+Liberty</a></li>
       <li><a href="/東京都千代田区岩本町1-1">http://adre.so/東京都千代田区岩本町1-1</a></li>
       <li><a href="/新宿駅">http://adre.so/新宿駅</a></li>
       <li><a href="/日本のへそ">http://adre.so/日本のへそ</a></li>
       <li><a href="/富士山:google">http://adre.so/富士山:google</a></li>
       <li><a href="/鹿児島県志布志市志布志町志布志:googleapp">http://adre.so/鹿児島県志布志市志布志町志布志:googleapp</a></li>
+    </ul>
+    </ul>
+
+  <h2>MISC</h2>
+    <ul class="nav nav-tabs nav-stacked">
+      <li>
+        <a href='http://adre.so/bookmarklet#!javascript:"http%3A%2F%2Flet.st-hatelabo.com%2Fequinox79%2Flet%2FgYC-xvfE9_LuPg.bookmarklet.js%20%28arg%29".replace%28%2F%28%5CS%2B%29%5Cs%2B%28%5CS%2A%29%2F%2Cfunction%28s%2Curl%2Carg%29%7Bs%3Ddocument.createElement%28"script"%29%3Bs.charset%3D"utf-8"%3Bs.src%3Durl%2B"%3Fs%3D"%2BencodeURIComponent%28arg%29%3Bdocument.body.appendChild%28s%29%7D%29%3Bvoid%280%29%3B'>
+          <span>ブックマークレットはこちら</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/equinox79">
+          <span>上記のリストに追加希望の方は@equinox79迄</span>
+        </a>
+      </li>
+    </ul>
   </div>
 
 </div>
